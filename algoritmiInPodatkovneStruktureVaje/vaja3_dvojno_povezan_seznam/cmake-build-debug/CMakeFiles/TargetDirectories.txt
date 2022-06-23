@@ -1,0 +1,3 @@
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/vaja3_dvojno_povezan_seznam/cmake-build-debug/CMakeFiles/vaja3_dvojno_povezan_seznam.dir
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/vaja3_dvojno_povezan_seznam/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/vaja3_dvojno_povezan_seznam/cmake-build-debug/CMakeFiles/rebuild_cache.dir

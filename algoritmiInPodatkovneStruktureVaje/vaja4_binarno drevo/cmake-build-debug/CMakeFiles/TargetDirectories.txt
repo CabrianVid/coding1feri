@@ -1,0 +1,3 @@
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/vaja4_binarno drevo/cmake-build-debug/CMakeFiles/vaja4_binarno_drevo.dir
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/vaja4_binarno drevo/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/vaja4_binarno drevo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
