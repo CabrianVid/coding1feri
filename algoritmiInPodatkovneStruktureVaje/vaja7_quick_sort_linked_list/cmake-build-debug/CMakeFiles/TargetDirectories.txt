@@ -1,0 +1,3 @@
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/vaja7_quick_sort_linked_list/cmake-build-debug/CMakeFiles/vaja7_quick_sort_linked_list.dir
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/vaja7_quick_sort_linked_list/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/vaja7_quick_sort_linked_list/cmake-build-debug/CMakeFiles/rebuild_cache.dir
