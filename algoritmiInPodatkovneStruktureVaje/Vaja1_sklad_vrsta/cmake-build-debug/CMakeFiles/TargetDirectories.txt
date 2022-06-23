@@ -1,0 +1,3 @@
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/Vaja1_sklad_vrsta/cmake-build-debug/CMakeFiles/Vaja1_sklad_vrsta.dir
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/Vaja1_sklad_vrsta/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/LENOVO/OneDrive/Namizje/algoritmi_podatkovne_strukture/Vaja1_sklad_vrsta/cmake-build-debug/CMakeFiles/rebuild_cache.dir
