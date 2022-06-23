@@ -1,0 +1,3 @@
+C:/Users/LENOVO/OneDrive/Namizje/PRO2_vaje/vaja1002a/out/build/x64-Debug/CMakeFiles/vaja1002a.dir
+C:/Users/LENOVO/OneDrive/Namizje/PRO2_vaje/vaja1002a/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/LENOVO/OneDrive/Namizje/PRO2_vaje/vaja1002a/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
