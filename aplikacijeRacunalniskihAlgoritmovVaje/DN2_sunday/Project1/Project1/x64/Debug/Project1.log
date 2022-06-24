@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Aplikacije racunalniskih algoritmov\DN2_sunday\Project1\Project1\Source.cpp(34,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Aplikacije racunalniskih algoritmov\DN2_sunday\Project1\Project1\Source.cpp(35,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Project1.vcxproj -> C:\Aplikacije racunalniskih algoritmov\DN2_sunday\Project1\x64\Debug\Project1.exe
