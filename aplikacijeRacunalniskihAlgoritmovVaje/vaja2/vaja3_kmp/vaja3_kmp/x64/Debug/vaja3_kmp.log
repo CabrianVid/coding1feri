@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Aplikacije racunalniskih algoritmov\vaja3\vaja3_kmp\vaja3_kmp\Source.cpp(31,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Aplikacije racunalniskih algoritmov\vaja3\vaja3_kmp\vaja3_kmp\Source.cpp(32,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  vaja3_kmp.vcxproj -> C:\Aplikacije racunalniskih algoritmov\vaja3\vaja3_kmp\x64\Debug\vaja3_kmp.exe
