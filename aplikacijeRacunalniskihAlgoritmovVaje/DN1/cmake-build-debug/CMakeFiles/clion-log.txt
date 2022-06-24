@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Aplikacije racunalniskih algoritmov\Vaja2 Select CMakeLists.txt

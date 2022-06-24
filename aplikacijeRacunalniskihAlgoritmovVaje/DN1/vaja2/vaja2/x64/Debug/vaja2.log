@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Aplikacije racunalniskih algoritmov\Vaja2\vaja2\vaja2\Source.cpp(82,9): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Aplikacije racunalniskih algoritmov\Vaja2\vaja2\vaja2\Source.cpp(103,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Aplikacije racunalniskih algoritmov\Vaja2\vaja2\vaja2\Source.cpp(207,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  vaja2.vcxproj -> C:\Aplikacije racunalniskih algoritmov\Vaja2\vaja2\x64\Debug\vaja2.exe
