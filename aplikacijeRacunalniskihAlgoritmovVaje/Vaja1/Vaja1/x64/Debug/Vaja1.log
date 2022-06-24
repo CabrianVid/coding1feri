@@ -1,0 +1,5 @@
+﻿  vaja1.cpp
+C:\Code Projects\Vaja1\Vaja1\vaja1.cpp(82,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Code Projects\Vaja1\Vaja1\vaja1.cpp(103,41): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Code Projects\Vaja1\Vaja1\vaja1.cpp(207,41): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Vaja1.vcxproj -> C:\Code Projects\Vaja1\x64\Debug\Vaja1.exe
