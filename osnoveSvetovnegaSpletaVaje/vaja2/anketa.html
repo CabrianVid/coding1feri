@@ -1,0 +1,85 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vidova spletna stran</h1>
+    <div class="vrstica">
+      <table class="vrstica">
+        <tr>
+      <td><a href="index.html"> domov</a></td>
+     <td> <a href="ponudba.html">ponudba</a> </td>
+     <td><a href="anketa.html">anketa</a></td>
+     <td> <a href="https://estudij.um.si">Vaje </a></td>
+    </tr>
+      </table>
+  </div>
+      <h2 class="anketa">Anketa</h2>
+      <div class="anketavsebina">
+      <div class="ime-posta-kraj"></div>
+      <div class="dolgi">
+  <form action="anketa.html" method="get">
+    ime in priimek:
+    <br>
+    <input type="text" name="imeinpriimek" id="ime"> 
+  
+  </form>
+  Elektronska pošta:
+  <br>
+  <input type="email" name="elektronskapošta">
+<br>
+  Kraj:
+  <br>
+<input list="kraji" name="Kraj" id="Kraj">
+
+<datalist id="kraji">
+  <option value="Ptuj"></option>
+  <option value="Maribor"></option>
+  <option value="Ljubljana"></option>
+  <option value="Koper"></option>
+  <option value="Celje"></option>
+
+  </datalist>
+</div>
+
+<div class="tipavtomobila">
+tip avtomobila:
+<input type="radio" name="tipavtomobila" value="limuzina" id="limuzina"> <label for="limuzina">Limuzina</label>
+<input type="radio" name="tip avtomobila" value="kombi" id="kombi"> <label for="kombi">Kombi</label>
+<input type="radio" name="tip avtomobila" value="enoprostorec" id="enoprostorec"> <label for="enoprostorec">Enoprostorec</label>
+<input type="radio" name="tip avtomobila" value="karavan" id="karavan"> <label for="karavan">Karavan</label>
+<input type="radio" name="tip avtomobila" value="terenec" id="terenec"> <label for="terenec">Terenec</label>
+</div>
+<br>
+
+
+
+<div class="znamke"> Priljubljene znamke:
+<input  type="checkbox" name="logos" value="KIA" id="KIAbox"> <label for="KIA">KIA</label>
+<input type="checkbox" name="logos" value="MINI" id="MINIbox"> <label for="MINI">MINI</label>
+<input type="checkbox" name="logos" value="BMW" id="BMWbox"> <label for="BMW">BMW</label>
+<input type="checkbox" name="logos" value="VW" id="VWbox"> <label for="VW">VW</label>
+<input type="checkbox" name="logos" value="Seat" id="Seatbox"> <label for="Seat">Seat</label>
+<input type="checkbox" name="logos" value="Alfa Romeo" id="Alfabox"> <label for="Alfa Romeo">Alfa Romeo</label>
+
+</div>
+
+<div class="zelje"> Želje:
+  <br>
+<div class="dolgi">
+<textarea name="zelje" id="zelje" cols="80" rows="10"></textarea>
+
+</div>
+  <br>
+<div>
+<input type="submit" name="oddaj" value="oddaj" id="gumb">
+</div>
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html5>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opravila</title>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    ul{list-style-type: none;padding:0px;}
+    li{border: 1px solid black; margin: 5px; padding: 5px; }
+    .oznacen {border: 3px solid red;}
+    .table{width: 1000px;}
+
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center bg-primary">
+                <h1>Opravila</h1>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-lg-6 col-md-12 pt-3 mb-3">
+                 <h1>Kategorije</h1>
+
+                 <div class="input-group mb-3">
+                <input type ="text" name="vnos" id="vnos" class="form-control"/>
+                <button type="button" id="dodaj" class="btn btn-primary ml-2">Dodaj</button>
+                <button type="button" id="brisi" class="btn btn-danger ml-2" data-toggle="modal">Brisi</button>
+
+
+
+
+ 
+                <ul class="list-group list-unstyled">
+
+                <li class="list-group-item">Vaje </li>
+                <li class="list-group-item">Treningi </li>
+                <li class="list-group-item">Projekti </li>
+                </ul>
+            </div>
+         </div>
+    </div>
+
+	<div class="col-lg-6 col-md-12 pt-3">
+		
+        <h1>Tabela</h1>
+        
+        <div class="input-group  mb-3">
+
+            <input type ="text" name="vnos2" id="vnos2" class="form-control"/>
+            <button type="button" id="dodaj2" class="btn btn-primary ml-2">Dodaj</button>
+        </div>
+
+
+        <table class="table table-striped">
+            <thead>
+             <tr>
+                 <th>ID</th><th>Opis opravila</th><th>Kategorija opravila</th><th>Datum vnosa</th>
+             </tr>
+
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+     <button type="button" id="brisi2" class="btn btn-danger">Brisi</button>
+
+    </div>
+
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

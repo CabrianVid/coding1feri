@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VAJA JavaScript</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        tr {
+            padding: 0;
+            margin: 0;
+        }
+        td {
+            border: 1px solid gray;
+            width: 32px;
+            height: 32px;
+            background-color: silver;
+            padding: 0;
+        }
+    </style>
+
+</head>
+    <body onload="pridobiPodatke();"></body>
+
+<script>
+     function pridobiPodatke() {
+        do {
+            var st_vrstic = prompt("Vnesi stevilo vrstic za tabelo(med 5 in 20):");
+            var st_stolpcev = prompt("Vnesi stevilo stolpcev za tabelo(med 10 in 40)");
+
+             if (!(st_vrstic >= 5 && st_vrstic <= 20) && !(st_stolpcev >= 10 && st_stolpcev <= 40)) {
+                alert("Vnesli ste napacno stevilo vrstic("+st_vrstic + ") in stoplcev("+st_stolpcev + ")!!");
+            }
+            else if (!(st_vrstic >= 5 && st_vrstic <= 20)) {
+                alert("Vnesli ste napacno stevilo vrstic("+st_vrstic + ")!!!");
+            } else if (!(st_stolpcev >= 10 && st_stolpcev <= 40)) {
+                alert("Vnesli ste napacno stevilo stolpcev("+st_stolpcev + ")!!!");
+            } 
+        } while (!(st_vrstic >= 5 && st_vrstic <= 20) || !(st_stolpcev >= 10 && st_stolpcev <= 40));
+
+        risiTabelo();
+
+        var body = document.getElementsByTagName("body")[0];
+        var br = document.createElement("br");
+        body.append(br);
+
+        risiDrugo(st_vrstic, st_stolpcev);
+
+        // ----------------------Pridobim sliko iz prve tabele----------------------
+        var tabela1 = document.getElementById('tabela1');
+        tabela1.onclick = function (event) {
+            let target = event.target;
+            if (target.tagName == 'TD')
+                 slika = target.style.backgroundImage;
+                    console.log(slika);
+        }
+
+        // ----------------------Pridobim sliko iz druge tabele----------------------
+        var tabela2 = document.getElementById("tabela2");
+        tabela2.onclick = function (event) {
+            let target = event.target;
+            if (target.tagName == 'TD') {
+                target.style.backgroundImage = slika;
+             }            
+        }
+    }
+    // ----------------------Risem prvo tabelo----------------------
+    function risiTabelo() {
+        var body = document.getElementsByTagName("body")[0];
+        var tbl = document.createElement("table");
+        var tblbody = document.createElement("tbody");
+        var row = document.createElement("tr");
+        for (let i = 0; i < 16; i++) {
+            let td = document.createElement("td");
+            row.append(td);
+            td.style.backgroundImage = "url(images/sprite" + (i + 1) + ".gif)";
+        }
+        tblbody.append(row);
+        tbl.append(tblbody);
+        tbl.setAttribute("cellspacing", "0");
+        tbl.setAttribute("cellpadding", "0");
+        tbl.setAttribute("id", "tabela1");
+        body.append(tbl);
+        console.log(body);
+    }
+    // ----------------------Risem drugo tabelo----------------------
+    function risiDrugo(row, col) {
+        var body = document.getElementsByTagName("body")[0];
+        var tbl2 = document.createElement("table");
+        var tblbody = document.createElement("tbody");
+        for (var i = 0; i < row; i++) {
+            let row = document.createElement("tr");
+            for (var j = 0; j < col; j++) {
+                let td = document.createElement("td");
+                row.append(td);
+            }
+            tblbody.append(row);
+        }
+
+        tbl2.append(tblbody);
+        tbl2.setAttribute("cellspacing", "0");
+        tbl2.setAttribute("cellpadding", "0");
+        tbl2.setAttribute("id", "tabela2");
+        body.append(tbl2);
+        console.log(body);
+    }
+
+
+</script>
+</html>

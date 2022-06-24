@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="obrazec.html" method="get" id="obrazec" name="forma" onsubmit="return validiraj();">
+        <table>
+            <tr>
+                <td><label for="u_ime">Uporabnisko ime</label></td>
+                <td><input type="text" name="u_ime" oninput="preveriIme();" id="u_ime">
+                    <span style="color: rgb(51, 255, 0);"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="eposta">E-posta</label></td>
+                <td>
+                    <input type="text" name="eposta" id="eposta" oninput="preveriEmail();">
+                    <span style="color: rgb(51, 255, 0);"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="geslo">Geslo</label></td>
+                <td>
+                    <input type="password" name="geslo" id="geslo" oninput="preveriGeslo();">
+                    <span style="color: rgb(51, 255, 0);"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="ponoviGeslo">Ponovi geslo</label></td>
+                <td>
+                    <input type="password" name="ponoviGeslo" id="ponoviGeslo" oninput="preveriPonovnoGeslo();">
+                    <span style="color: rgb(51, 255, 0);"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> <span>Spol</span></td>
+                <td>
+                    <input type="radio" name="spol" id="moski" value="moski" onloadeddata="preveriSpol();">
+                    <label for="moski">Moski</label>
+                    <input type="radio" name="spol" id="zenska" value="zenska">
+                    <label for="zenska" id="zenskiLabel">Zenski</label><span style="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> <input type="submit" value="Poslji"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <script>
+
+        var imena = ["Vid", "Sandi", "Gabrieal", "Joze", "Lan"];
+
+        var form = document.getElementById("obrazec");
+        var up_ime = document.getElementById("u_ime");
+        var eposta = document.getElementById("eposta");
+        var geslo = document.getElementById("geslo");
+        var ponoviGeslo = document.getElementById("ponoviGeslo");
+        var moski = document.getElementById("moski");
+        var zenska = document.getElementById("zenska");
+        var zenskiLabel = document.getElementById("zenskiLabel");
+
+        function preveriIme() {
+            if (up_ime.value.length < 3) {
+                up_ime.nextElementSibling.textContent = "Uporabnisko ime mora biti daljse od 3 znakov.";
+                return false;
+
+            }
+
+            if (up_ime.value.length > 20) {
+                up_ime.nextElementSibling.textContent = "Uporabnisko ime mora biti krajse od 20 znakov.";
+                return false;
+
+            }
+            for (let i = 0; i < 5; i++) {
+                if (up_ime.value.toLowerCase() == imena[i].toLowerCase()) {
+                    up_ime.nextElementSibling.textContent = "Uporabnisko ime ze obstaja.";
+                    return false;
+
+                }
+            }
+            if (up_ime.value.length >= 3 && up_ime.value.length <= 20) {
+                up_ime.nextElementSibling.textContent = "";
+                return true;
+
+            }
+        }
+        function preveriGeslo() {
+            var maleCrke = /[a-z]/g;
+            var velikeCrke = /[A-Z]/g;
+            var stevilke = /[0-9]/g;
+            // Link kjer sem nasel izraze: https://www.w3schools.com/howto/howto_js_password_validation.asp
+            if (geslo.value.length < 6) {
+                geslo.nextElementSibling.textContent = "Geslo mora biti dolgo vsaj 6 znakov."
+                return false;
+
+            }
+            else if (!(geslo.value.match(maleCrke))) {
+                geslo.nextElementSibling.textContent = "Geslo mora vsebovati vsaj eno malo crko.";
+                return false;
+
+            }
+            else if (!(geslo.value.match(velikeCrke))) {
+                geslo.nextElementSibling.textContent = "Geslo mora vsebovati vsaj eno veliko crko.";
+                return false;
+
+            }
+            else if (!(geslo.value.match(stevilke))) {
+                geslo.nextElementSibling.textContent = "Geslo mora vsebovati vsaj eno stevilko.";
+                return false;
+            }
+            else {
+                geslo.nextElementSibling.textContent = "";
+                return true;
+            }
+        }
+
+        function preveriPonovnoGeslo() {
+            if (geslo.value != ponoviGeslo.value) {
+                ponoviGeslo.nextElementSibling.textContent = "Gesli se ne ujemata.";
+                return false;
+            } else {
+                ponoviGeslo.nextElementSibling.textContent = "";
+                return true;
+            }
+        }
+
+        function preveriEmail() {
+            var dovoljeniZnaki = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            // Link do strani: https://stackoverflow.com/questions/46155/whats-the-best-way-to-validate-an-email-address-in-javascript
+
+            if (!(eposta.value.match(dovoljeniZnaki))) {
+                eposta.nextElementSibling.textContent = "Neveljaven elektronski naslov.";
+                return false;
+            } else {
+                eposta.nextElementSibling.textContent = "";
+                return true;
+            }
+        }
+
+        function preveriSpol() {
+            if (moski.checked == false && zenska.checked == false) {
+                zenskiLabel.nextElementSibling.textContent = "Niste izbrali spola."
+                return false;
+            }
+            if (moski.checked || zenska.checked) {
+                zenskiLabel.nextElementSibling.textContent ="";
+                return true;
+            }
+        }
+
+        function validiraj() {
+            if (preveriIme() && preveriGeslo() && preveriPonovnoGeslo() && preveriEmail() && preveriSpol()) {
+                alert("Preusmerjam.....");
+                return true;
+            }
+            else{
+                alert("Napaka!!");
+                return false;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

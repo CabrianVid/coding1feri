@@ -1,0 +1,218 @@
+
+body {
+    background-color: lightblue;
+    font-family: pisava1;
+}
+
+h1{
+  line-height: 1cm;
+  background-color: blue;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  width: 100%;
+  top: 10px;
+  z-index: 1000;
+  color: blanchedalmond;
+  font-family: bozicnapisava;
+}
+.vrstica{
+  line-height: 1cm;
+  color: white;
+  background-color: rgb(117, 117, 224);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 68px;
+  z-index: 1000;
+  display: inline-block;
+}
+
+td a {
+  display: block;
+  color: rgb(119, 187, 219);
+  }
+  td a:hover {
+  background-color: rgb(13, 83, 110);
+  color: rgb(170, 222, 243);
+  }
+
+@font-face {
+  font-family: "metalpisava";
+  src: url(fonts/METALORD.TTF);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "bozicnapisava";
+  src: url(fonts/SnowForSanta.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "pisava1";
+  src: url(fonts/Fruktur-Regular.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+.omeni{
+  margin-top: 80px;
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-left: 300px;
+  padding-bottom: 10px;
+  background-color: yellow;
+}
+.bomeni{
+  margin-top: 0px;
+  margin-right: 400px;
+  margin-left: 400px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.video{ 
+  margin-top: 0px;
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-left: 250px;
+  padding-bottom: 10px;
+  background-color: yellow;
+}
+.bvideo{
+  margin-top: 0px;
+  margin-right: 400px;
+  margin-left: 400px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+}
+#podsliko{
+padding-left: 250px;
+}
+
+
+
+
+.card{
+  background-color: rgb(21, 99, 243);
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.vrsta1{
+  display: flex;
+  justify-content: center;
+}
+.vrsta2{
+  display: flex;
+  justify-content: center;
+}
+.slikeavtov{
+  height: 200px;
+  width: 200px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#kiaslika{
+  background-image: url(images/seat-leon-2021.jpeg);
+
+}
+#minislika{
+  background-image: url(images/minicooperphoto.jpeg);
+}
+#bmwslika{
+  background-image: url(images/bmwx1.jpeg);
+}
+#vwslika{
+  background-image: url(images/VWsharan.jpeg);
+}
+#alfaslika{
+  background-image: url(images/Alfa-Romeostelvio.jpeg);
+}
+#seatslika{
+  background-image: url(images/seat-leon-2021.jpeg);
+}
+.card h3{
+color: rgb(221, 43, 43);
+padding: 0px;
+text-align: center;
+height: 40px;
+background-color: rgb(158, 206, 252);
+display: block;
+margin-top: 0px;
+}
+.card dl{
+  height: 160px;
+  padding: 0px;
+  text-align: center;
+}
+
+.anketa
+{margin-top: 110px;
+margin-right: 400px;
+margin-left: 400px;
+margin-bottom: 0px;
+padding-top: 10px;
+padding-left: 300px;
+padding-bottom: 10px;
+background-color: yellow;
+}
+.anketavsebina{
+  margin-top: 0px;
+  margin-right: 400px;
+  margin-left: 400px;
+  padding-top: 10px;
+  padding-left: 81px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.dolgi input{
+  border: none;
+  appearance: none;
+  background-color: rgb(235, 238, 77);
+  padding: 12px;
+  border-radius: 5px;
+  width: 600px;
+}
+.dolgi input{
+  background: none;
+  border: 2px solid;
+}
+.dolgi input:valid,
+.dolgi input:focus{
+  border-color: green;
+}
+
+
+#gumb {
+  display: block;
+  color: rgb(119, 187, 219);
+  }
+#gumb:hover {
+  background-color: rgb(13, 83, 110);
+  color: rgb(170, 222, 243);
+  cursor: grab;
+  }
+.ponudba{
+  margin-top: 80px;
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-left: 300px;
+  padding-bottom: 0px;
+  background-color: yellow;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vidova spletna stran</h1>
+    <ul>
+        <li><a href="index.html"> domov</a></li>
+       <li> <a href="ponudba.html">ponudba</a> </li>
+       <li><a href="anketa.html">anketa</a></li>
+       <li> <a href="https://estudij.um.si">Vaje </a></li>
+      </ul>
+      <h2>Anketa</h2>
+      <table>
+      <tr>
+        <form action="anketa.html" method="get">
+    <td>ime in priimek:</td>
+    <td><input type="text" name="ime in priimek"></td> </form></tr>
+  <tr><td>Elektronska pošta:</td>
+   <td><input type="email" name="elektronska pošta"></td></tr>
+
+   <tr><td>Kraj:</td>
+<td><input list="kraji" name="Kraj" id="Kraj"></td></tr>
+
+<datalist id="kraji">
+  <option value="Ptuj"></option>
+  <option value="Maribor"></option>
+  <option value="Ljubljana"></option>
+  <option value="Koper"></option>
+  <option value="Celje"></option>
+
+  </datalist>
+
+
+
+<tr><td>
+tip avtomobila:</td>
+ <td><input type="radio" name="tip avtomobila" value="limuzina" id="limuzina"> <label for="limuzina">Limuzina</label>
+<input type="radio" name="tip avtomobila" value="kombi" id="kombi"> <label for="kombi">Kombi</label>
+<input type="radio" name="tip avtomobila" value="enoprostorec" id="enoprostorec"> <label for="enoprostorec">Enoprostorec</label>
+<input type="radio" name="tip avtomobila" value="karavan" id="karavan"> <label for="karavan">Karavan</label>
+<input type="radio" name="tip avtomobila" value="terenec" id="terenec"> <label for="terenec">Terenec</label>
+</td></tr>
+
+
+
+<tr><td>Priljubljene znamke: </td>
+<td><input type="checkbox" name="logos" value="KIA" id="KIA"> <label for="KIA">KIA</label>
+<input type="checkbox" name="logos" value="MINI" id="MINI"> <label for="MINI">MINI</label>
+<input type="checkbox" name="logos" value="BMW" id="BMW"> <label for="BMW">BMW</label>
+<input type="checkbox" name="logos" value="VW" id="VW"> <label for="VW">VW</label>
+<input type="checkbox" name="logos" value="Seat" id="Seat"> <label for="Seat">Seat</label>
+<input type="checkbox" name="logos" value="Alfa Romeo" id="Alfa Romeo"> <label for="Alfa Romeo">Alfa Romeo</label>
+</td></tr>
+
+<tr><td>Želje:</td>
+<td><textarea name="zelje" id="zelje" cols="60" rows="10"></textarea>
+<br>
+
+<input type="submit" name="oddaj" value="oddaj"></td></tr>
+</table>
+
+    
+</body>
+</html>
