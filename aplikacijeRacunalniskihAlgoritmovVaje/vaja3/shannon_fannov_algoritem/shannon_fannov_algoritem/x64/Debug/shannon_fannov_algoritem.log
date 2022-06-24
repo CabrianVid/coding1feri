@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Aplikacije racunalniskih algoritmov\vaja4\shannon_fannov_algoritem\shannon_fannov_algoritem\Source.cpp(54,15): warning C4804: '-': unsafe use of type 'bool' in operation
+C:\Aplikacije racunalniskih algoritmov\vaja4\shannon_fannov_algoritem\shannon_fannov_algoritem\Source.cpp(245,29): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Aplikacije racunalniskih algoritmov\vaja4\shannon_fannov_algoritem\shannon_fannov_algoritem\Source.cpp(307,28): warning C4390: ';': empty controlled statement found; is this the intent?
+  shannon_fannov_algoritem.vcxproj -> C:\Aplikacije racunalniskih algoritmov\vaja4\shannon_fannov_algoritem\x64\Debug\shannon_fannov_algoritem.exe
